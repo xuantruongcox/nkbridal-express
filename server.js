@@ -5,7 +5,7 @@ const express = require('express');
 const routes = require('./router/router');
 // Constants
 const PORT = 8080;
-const HOST = 'nkbridal-express.us-east-2.elasticbeanstalk.com';
+const HOST = '0.0.0.0';
 const app = express();
 // App
 // 
