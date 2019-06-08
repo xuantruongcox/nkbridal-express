@@ -1,10 +1,19 @@
 const mysql = require('mysql');
 const connection = mysql.createPool({
-    host: '172.18.0.3',
+    host: 'aa1e0g5z9z53z06.cxmtne3xtil4.us-east-2.rds.amazonaws.com',
     port: '3306',
-    user: 'root',
-    password: 'root',
+    user: 'nkbridal',
+    password: 'nkbridal123456',
     database: 'nkbridal_sql'
+})
+
+connection.connect(function(err){
+	if(err){
+		console.error('Database connection failed: ' + err.stack);
+		return;
+	}
+	
+	console.log('Connected to database.');
 })
 
 
